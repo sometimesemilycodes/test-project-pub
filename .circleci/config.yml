@@ -1,0 +1,15 @@
+version: 2.1
+jobs:
+  test:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: Run tests
+          command: echo 'replace me with real tests!' 
+
+workflows:
+  example:
+    jobs:
+      - test
